@@ -7,10 +7,6 @@ const userSchema = new Schema(
     product: {
       type: String,
     },
-    email: {
-      type: String,
-      require: true,
-    },
   },
   { timestamps: true }
 );

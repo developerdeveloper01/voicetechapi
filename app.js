@@ -13,12 +13,14 @@ const user = require("./routes/user");
 const staff = require("./routes/staff");
 const role = require("./routes/role");
 const inquiry = require("./routes/inquiry");
+const providedip = require("./routes/providedip");
 
 //Use
 app.use("/api", user);
 app.use("/api", staff);
 app.use("/api", role);
 app.use("/api", inquiry);
+app.use("/api", providedip);
 
 app.get("/api", (req, res) => {
   res.send("Hello World!");
